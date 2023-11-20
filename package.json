@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "First Hexlet project",
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
   },
   "main": "index.js",
   "type": "module",
@@ -11,5 +12,12 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Polina Yausheva",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^8.53.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-jest": "^27.6.0",
+    "readline-sync": "^1.4.10"
+  }
 }
