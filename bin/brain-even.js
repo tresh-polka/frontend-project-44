@@ -2,6 +2,10 @@
 
 import readlineSync from 'readline-sync';
 
+console.log('Welcome to the Brain Games!')
+const name = readlineSync.question('May I have your name? ');
+console.log(`Hello, ${name}!`)
+
 console.log('Answer "yes" if the number is even, otherwise answer "no".')
 
 let n = 0
@@ -16,7 +20,7 @@ while (n < 3) {
             n += 1
             console.log('Correct!') 
         } else {
-            console.log("'no' is wrong answer ;(. Correct answer was 'yes'.")
+            console.log(`'${choice}' is wrong answer ;(. Correct answer was 'yes'.`)
             console.log("Let's try again, Bill!")  
         }
     } else {
@@ -24,10 +28,10 @@ while (n < 3) {
             n += 1
             console.log('Correct!') 
         } else {
-            console.log("'yes' is wrong answer ;(. Correct answer was 'no'.")
-            console.log("Let's try again, Bill!")  
+            console.log(`'${choice}' is wrong answer ;(. Correct answer was 'no'.`)
+            console.log(`Let's try again, ${name}!`)
         }
     }
 }
 
-console.log('Congratulations, Bill!')
+console.log(`Congratulations, ${name}!`)
