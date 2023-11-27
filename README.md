@@ -6,3 +6,5 @@
 <a href='https://asciinema.org/a/bJL5dYPb1wZB9QT86xh9BBAeU'>Работа brain-even<a>
 
 <a href='https://asciinema.org/a/tSnlEKXFVVN9Ykfalhzi63iTu'>Работа brain-calc</a>
+
+<a href='https://asciinema.org/a/9HXkfiIIAdAZcP5Ie7RpJXayA'>Работа brain-calc</a>
