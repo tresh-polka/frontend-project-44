@@ -9,4 +9,6 @@
 
 <a href='https://asciinema.org/a/9HXkfiIIAdAZcP5Ie7RpJXayA'>Работа brain-calc</a>
 
-<a href='https://asciinema.org/a/Je54EQ5eDlzN8bCQuCbju5Q8K'>Работа brain-progression<a>
+<a href='https://asciinema.org/a/Je54EQ5eDlzN8bCQuCbju5Q8K'>Работа brain-progression</a>
+
+<a href='https://asciinema.org/a/74pJci6g6ErPur5aGALUHDb8F'>Работа brain-prime</a>
