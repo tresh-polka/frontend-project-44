@@ -10,31 +10,32 @@ console.log('Find the greatest common divisor of given numbers.')
 
 let n = 0
 while (n < 3) {
-    const progression = readlineSync.question('Question: ')
-    const answ = readlineSync.question('Your answer: ')
+    let length = Math.floor(Math.random() * 10 + 5)
+    let progression = []
+    let element = Math.floor(Math.random() * 100)
+    let b = Math.floor(Math.random() * 100)
+    let replaceableElement = Math.floor(Math.random() * length)
 
-    let progr = progression.split(' ')
-    let answer = Number(answ)
-
-    let numb = 0
-    let b = 0
-    let result = 0
-
-    for (let i = 0; i <= progr.length - 1; i += 1) {
-        if (progr[i] === '..') {
-            numb = i
-        }
+    for (let i = 0; i < length; i += 1) {
+        progression.push(element + b)
+        element += b
     }
 
-    if (numb === 0) {
-        b = Number(progr[2]) - Number(progr[1])
-        result = Number(progr[1]) - b
-    } else if (numb === progr.length - 1) {
-        b = Number(progr[progr.length - 2]) - Number(progr[progr.length - 3])
-        result = Number(progr[progr.length - 2]) + b
+    progression[replaceableElement] = '..'
+
+
+    console.log(`Question: ${progression.join(' ')}`)
+    const answ = readlineSync.question('Your answer: ')
+
+    let answer = Number(answ)
+    let result = 0
+
+    if (replaceableElement === 0) {
+        result = progression[1] - b
+    } else if (replaceableElement === length - 1) {
+        result = progression[length - 2] + b
     } else {
-        b = (Number(progr[numb + 1]) - Number(progr[numb - 1])) / 2
-        result = Number(progr[numb - 1]) + b
+        result = progression[replaceableElement - 1] + b
     }
 
     if (result === answer) {

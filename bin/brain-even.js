@@ -10,12 +10,11 @@ console.log('Answer "yes" if the number is even, otherwise answer "no".')
 
 let n = 0
 while (n < 3) {
-    const num = readlineSync.question('Question: ')
+    let num = Math.floor(Math.random() * 1000)
+    console.log(`Question: ${num}`)
     const choice = readlineSync.question('Your answer: ')
 
-    const number = Number(num)
-
-    if (number % 2 === 0) {
+    if (num % 2 === 0) {
         if (choice === 'yes') {
             n += 1
             console.log('Correct!') 

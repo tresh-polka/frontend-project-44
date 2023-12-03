@@ -10,14 +10,25 @@ console.log('What is the result of the expression?')
 
 let n = 0
 while (n < 3) {
-    const num = readlineSync.question('Question: ')
+    let symbol = ['+', '-', '*']
+    let i = Math.floor(Math.random() * 3)
+    let num1 = Math.floor(Math.random() * 100)
+    let num2 = Math.floor(Math.random() * 100)
+
+    if (symbol[i] === '-') {
+        if (num2 > num1) {
+            let num = num1
+            num1 = num2
+            num2 = num
+        }
+    }
+
+    console.log(`Question: ${num1} ${symbol[i]} ${num2}`)
     const answ = readlineSync.question('Your answer: ')
 
-    let num1 = Number(num.split(' ')[0])
-    let num2 = Number(num.split(' ')[2])
     let answer = Number(answ)
 
-    if (num.split(' ')[1] === '+') {
+    if (symbol[i] === '+') {
         let result = num1 + num2
         if (answer === result) {
             n += 1
@@ -28,7 +39,7 @@ while (n < 3) {
         }
     }
 
-    if (num.split(' ')[1] === '-') {
+    if (symbol[i] === '-') {
         let result = num1 - num2
         if (answer === result) {
             n += 1
@@ -39,7 +50,7 @@ while (n < 3) {
         }
     }
 
-    if (num.split(' ')[1] === '*') {
+    if (symbol[i] === '*') {
         let result = num1 * num2
         if (answer === result) {
             n += 1

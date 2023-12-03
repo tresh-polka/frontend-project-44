@@ -10,10 +10,10 @@ console.log('Find the greatest common divisor of given numbers.')
 
 let n = 0
 while (n < 3) {
-    const number = readlineSync.question('Question: ')
-    const answer = readlineSync.question('Your answer: ')
+    let num = Math.floor(Math.random() * 100)
 
-    let num = Number(number)
+    console.log(`Question: ${num}`)
+    const answer = readlineSync.question('Your answer: ')
 
     let result = ''
     let count = 0
