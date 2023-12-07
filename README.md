@@ -18,6 +18,6 @@
 
 <a href='https://asciinema.org/a/FyYdLTYU1GFfDSobf6TV3A8RS'>Работа brain-gcd</a>
 
-<a href='https://asciinema.org/a/nbzThnPSE8pdZ1FvK3V1lfOKG'>Работа brain-progression</a>
+<a href='https://asciinema.org/a/8khjbnPUMTW26GVu6N03ilfKc'>Работа brain-progression</a>
 
-<a href='https://asciinema.org/a/jL7tEElfb2djNY1vJykoNpFfm'>Работа brain-prime</a>
+<a href='https://asciinema.org/a/HV7tnpLZHwyBCdkyvSOEpH1cm'>Работа brain-prime</a>
