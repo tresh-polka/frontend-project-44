@@ -9,7 +9,8 @@ console.log(`Hello, ${name}!`)
 console.log('What is the result of the expression?')
 
 let n = 0
-while (n < 3) {
+let m = 0
+while (n < 3 && m < 1) {
     let symbol = ['+', '-', '*']
     let i = Math.floor(Math.random() * 3)
     let num1 = Math.floor(Math.random() * 100)
@@ -36,6 +37,7 @@ while (n < 3) {
         } else {
             console.log(`'${answer}' is wrong answer ;(. Correct answer was '${result}'.`)
             console.log(`Let's try again, ${name}!`)  
+            m = 1
         }
     }
 
@@ -47,6 +49,7 @@ while (n < 3) {
         } else {
             console.log(`'${answer}' is wrong answer ;(. Correct answer was '${result}'.`)
             console.log(`Let's try again, ${name}!`)  
+            m = 1
         }
     }
 
@@ -58,8 +61,11 @@ while (n < 3) {
         } else {
             console.log(`'${answer}' is wrong answer ;(. Correct answer was '${result}'.`)
             console.log(`Let's try again, ${name}!`)  
+            m = 1
         }
     }
 }
 
-console.log(`Congratulations, ${name}!`)
+if (n === 3 && m === 0) {
+    console.log(`Congratulations, ${name}!`)
+}

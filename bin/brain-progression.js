@@ -9,7 +9,8 @@ console.log(`Hello, ${name}!`)
 console.log('Find the greatest common divisor of given numbers.')
 
 let n = 0
-while (n < 3) {
+let m = 0
+while (n < 3 && m < 1) {
     let length = Math.floor(Math.random() * 10 + 5)
     let progression = []
     let element = Math.floor(Math.random() * 100)
@@ -44,8 +45,11 @@ while (n < 3) {
     } else {
         console.log(`'${answer}' is wrong answer ;(. Correct answer was '${result}'.`)
         console.log(`Let's try again, ${name}!`)  
+        m = 1
     }
     
 }
 
-console.log(`Congratulations, ${name}!`)
+if (n === 3 && m === 0) {
+    console.log(`Congratulations, ${name}!`)
+}

@@ -12,12 +12,12 @@
 - В brain-progression найти пропущенный элемент;
 - В brain-prime ответить, является ли число простым.
 
-<a href='https://asciinema.org/a/rSw85hExg87xbgMzknnEaHbz8'>Работа brain-even<a>
+<a href='https://asciinema.org/a/y8pkJsIxjT22XYkyYBqX9pwcH'>Работа brain-even<a>
 
-<a href='https://asciinema.org/a/k8fyYdzz8z979rKRes1C3wnAc'>Работа brain-calc</a>
+<a href='https://asciinema.org/a/ijtuDUXxOc2JfxtwfDDiOVZRT'>Работа brain-calc</a>
 
-<a href='https://asciinema.org/a/EHV14sx1CbqLg8AkFahnm7GhU'>Работа brain-gcd</a>
+<a href='https://asciinema.org/a/FyYdLTYU1GFfDSobf6TV3A8RS'>Работа brain-gcd</a>
 
-<a href='https://asciinema.org/a/n4lczuVavsMA2dBgMm7KPThFE'>Работа brain-progression</a>
+<a href='https://asciinema.org/a/nbzThnPSE8pdZ1FvK3V1lfOKG'>Работа brain-progression</a>
 
-<a href='https://asciinema.org/a/q2r9ub8vANvZb88hJ7TOOQuKH'>Работа brain-prime</a>
+<a href='https://asciinema.org/a/jL7tEElfb2djNY1vJykoNpFfm'>Работа brain-prime</a>
