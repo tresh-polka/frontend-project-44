@@ -1,33 +1,28 @@
 import gameStructure from '../src/index.js';
 
-const brainGcd = () => {
-  const gameDescription = 'Find the greatest common divisor of given numbers.';
-  const gameConditions = () => {
-    const num1 = Math.floor(Math.random() * 100);
-    const num2 = Math.floor(Math.random() * 100);
-    const computerChoice = `${num1} ${num2}`;
-    return computerChoice;
-  };
+const gcdConditions = () => {
+  let num1 = Math.floor(Math.random() * 100); // первое число для сравнения
+  let num2 = Math.floor(Math.random() * 100); // второе число для сравнения
+  const condition = `${num1} ${num2}`;
 
-  const rightResult = (computerChoice) => {
-    let result = '';
-    let num1 = Number(computerChoice.split(' ')[0]);
-    let num2 = Number(computerChoice.split(' ')[1]);
+  let result = '';
 
-    while (num1 !== 0 && num2 !== 0) {
-      if (num1 > num2) {
-        num1 %= num2;
-      } else {
-        num2 %= num1;
-      }
+  while (num1 !== 0 && num2 !== 0) {
+    if (num1 > num2) {
+      num1 %= num2;
+    } else {
+      num2 %= num1;
     }
+  }
 
-    result = num1 + num2;
+  result = String(num1 + num2);
 
-    return String(result);
-  };
+  return [condition, result];
+};
 
-  return gameStructure(gameDescription, gameConditions, rightResult);
+const brainGcd = () => {
+  const description = 'Find the greatest common divisor of given numbers.';
+  return gameStructure(description, gcdConditions);
 };
 
 export default brainGcd;
