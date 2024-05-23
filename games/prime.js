@@ -5,17 +5,25 @@ const primeConditions = () => {
   let count = 0;
   let result = '';
 
-  for (let i = 2; i < num; i += 1) {
-    if (num % i === 0) {
-      count += 1;
+  const getDivisor = (x) => {
+    for (let i = 2; i < x; i += 1) {
+      if (x % i === 0) {
+        count += 1;
+      }
     }
-  }
+    return count;
+  };
 
-  if (count > 0) {
-    result = 'no';
-  } else {
-    result = 'yes';
-  }
+  count = getDivisor(num);
+
+  const getResult = () => {
+    if (count > 0) {
+      return 'no';
+    }
+    return 'yes';
+  };
+
+  result = getResult(count);
 
   return [num, result];
 };

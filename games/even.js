@@ -4,11 +4,17 @@ const evenConditions = () => {
   const condition = Math.floor(Math.random() * 1000); // число для анализа
 
   let result = '';
-  if (condition % 2 === 0) {
-    result = 'yes';
-  } else {
-    result = 'no';
-  }
+
+  const getResult = (number) => {
+    if (number % 2 === 0) {
+      result = 'yes';
+    } else {
+      result = 'no';
+    }
+    return result;
+  };
+
+  result = getResult(condition);
 
   return [condition, result];
 };

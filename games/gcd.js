@@ -7,13 +7,20 @@ const gcdConditions = () => {
 
   let result = '';
 
-  while (num1 !== 0 && num2 !== 0) {
-    if (num1 > num2) {
-      num1 %= num2;
-    } else {
-      num2 %= num1;
+  const getGcd = (x, y) => {
+    let number1 = x;
+    let number2 = y;
+    while (number1 !== 0 && number2 !== 0) {
+      if (number1 > number2) {
+        number1 %= number2;
+      } else {
+        number2 %= number1;
+      }
     }
-  }
+    return [number1, number2];
+  };
+
+  [num1, num2] = getGcd(num1, num2);
 
   result = String(num1 + num2);
 

@@ -8,18 +8,23 @@ const calcConditions = () => {
 
   let result = 0;
 
-  if (symbol[i] === '-') {
-    if (num2 > num1) {
-      const num = num1;
-      num1 = num2;
-      num2 = num;
+  const getEquation = (sign) => {
+    if (sign[i] === '-') {
+      if (num2 > num1) {
+        const num = num1;
+        num1 = num2;
+        num2 = num;
+      }
+      result = num1 - num2;
+    } else if (sign[i] === '+') {
+      result = num1 + num2;
+    } else if (sign[i] === '*') {
+      result = num1 * num2;
     }
-    result = num1 - num2;
-  } else if (symbol[i] === '+') {
-    result = num1 + num2;
-  } else if (symbol[i] === '*') {
-    result = num1 * num2;
-  }
+    return result;
+  };
+
+  result = getEquation(symbol);
 
   const condition = `${num1} ${symbol[i]} ${num2}`;
 
