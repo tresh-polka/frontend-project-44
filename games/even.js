@@ -1,18 +1,19 @@
 import gameStructure from '../src/index.js';
 
+const getResult = (number) => {
+  let result = '';
+  if (number % 2 === 0) {
+    result = 'yes';
+  } else {
+    result = 'no';
+  }
+  return result;
+};
+
 const evenConditions = () => {
   const condition = Math.floor(Math.random() * 1000); // число для анализа
 
   let result = '';
-
-  const getResult = (number) => {
-    if (number % 2 === 0) {
-      result = 'yes';
-    } else {
-      result = 'no';
-    }
-    return result;
-  };
 
   result = getResult(condition);
 

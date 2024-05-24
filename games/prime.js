@@ -1,28 +1,28 @@
 import gameStructure from '../src/index.js';
 
+const getCount = (number) => {
+  let x = 0;
+  for (let i = 2; i < number; i += 1) {
+    if (number % i === 0) {
+      x += 1;
+    }
+  }
+  return x;
+};
+
+const getResult = (x) => {
+  if (x > 0) {
+    return 'no';
+  }
+  return 'yes';
+};
+
 const primeConditions = () => {
-  const num = Math.floor(Math.random() * 100); // случайное число для исследования
+  const num = Math.floor(Math.random() * 100 + 1); // случайное число для исследования
   let count = 0;
   let result = '';
 
-  const getCount = (number) => {
-    let x = 0;
-    for (let i = 2; i < number; i += 1) {
-      if (number % i === 0) {
-        x += 1;
-      }
-    }
-    return x;
-  };
-
   count = getCount(num);
-
-  const getResult = (x) => {
-    if (x > 0) {
-      return 'no';
-    }
-    return 'yes';
-  };
 
   result = getResult(count);
 
