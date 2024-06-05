@@ -18,11 +18,9 @@ const gcdConditions = () => {
   let num2 = Math.floor(Math.random() * 100); // второе число для сравнения
   const condition = `${num1} ${num2}`;
 
-  let result = '';
-
   [num1, num2] = getGcd(num1, num2);
 
-  result = String(num1 + num2);
+  const result = String(num1 + num2);
 
   return [condition, result];
 };

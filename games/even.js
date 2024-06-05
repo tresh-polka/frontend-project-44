@@ -1,23 +1,17 @@
 import gameStructure from '../src/index.js';
 
-const getResult = (number) => {
-  let result = '';
-  if (number % 2 === 0) {
-    result = 'yes';
-  } else {
-    result = 'no';
-  }
-  return result;
-};
+const isEven = (number) => number % 2 === 0;
 
 const evenConditions = () => {
-  const condition = Math.floor(Math.random() * 1000); // число для анализа
+  const num = Math.floor(Math.random() * 1000); // число для анализа
 
   let result = '';
 
-  result = getResult(condition);
+  if (isEven(num)) {
+    result = 'yes';
+  } else { result = 'no'; }
 
-  return [condition, result];
+  return [num, result];
 };
 
 const brainEven = () => {

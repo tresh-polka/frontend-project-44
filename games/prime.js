@@ -10,7 +10,7 @@ const getCount = (number) => {
   return x;
 };
 
-const getResult = (x) => {
+const isPrime = (x) => {
   if (x > 0) {
     return 'no';
   }
@@ -24,7 +24,7 @@ const primeConditions = () => {
 
   count = getCount(num);
 
-  result = getResult(count);
+  result = isPrime(count);
 
   return [num, result];
 };

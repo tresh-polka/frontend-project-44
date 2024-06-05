@@ -18,9 +18,7 @@ const calcConditions = () => {
   const num1 = Math.floor(Math.random() * 100); // первое число
   const num2 = Math.floor(Math.random() * 100); // второе число
 
-  let result = 0;
-
-  result = getEquationAnswer(symbol, num1, num2, i);
+  const result = getEquationAnswer(symbol, num1, num2, i);
 
   const condition = `${num1} ${symbol[i]} ${num2}`;
 
