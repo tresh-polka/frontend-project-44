@@ -1,6 +1,6 @@
 import gameStructure from '../src/index.js';
 
-const getEquation = (sign, x, y, i) => {
+const getEquationAnswer = (sign, x, y, i) => {
   let num1 = x;
   let num2 = y;
   let result = 0;
@@ -27,7 +27,7 @@ const calcConditions = () => {
 
   let result = 0;
 
-  result = getEquation(symbol, num1, num2, i);
+  result = getEquationAnswer(symbol, num1, num2, i);
 
   const condition = `${num1} ${symbol[i]} ${num2}`;
 
