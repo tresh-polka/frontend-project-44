@@ -2,4 +2,4 @@
 
 import sayHello from '../src/cli.js';
 
-console.log(sayHello());
+sayHello();

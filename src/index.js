@@ -23,15 +23,11 @@ const gameStructure = (gameDescription, gameConditions) => {
     }
   }
 
-  let finalMessage = '';
-
   if (n === 3 && m === 0) {
-    finalMessage = `Congratulations, ${name}!`;
+    console.log(`Congratulations, ${name}!`);
   } else {
-    finalMessage = `Let's try again, ${name}!`;
+    console.log(`Let's try again, ${name}!`);
   }
-
-  return finalMessage;
 };
 
 export default gameStructure;

@@ -2,4 +2,4 @@
 
 import brainPrime from '../games/prime.js';
 
-console.log(brainPrime());
+brainPrime();
